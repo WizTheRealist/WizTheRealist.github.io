@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Landing Page</title>
+    <title>Academic Database Management App</title>
     <style>
         /* General Styles */
         * {
@@ -75,17 +75,68 @@
             background-color: #0056b3;
         }
 
-        /* Section Styles */
+        /* Features Section */
+        #features {
+            background-color: #e9ecef;
+            padding: 50px 0;
+        }
+        #features h2, #features p {
+            text-align: center;
+        }
+        .feature-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 50px 0;
+        }
+        .feature {
+            width: 30%;
+            text-align: center;
+            padding: 20px;
+        }
+        .feature img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* About Section Styles */
         section {
             padding: 100px 50px;
         }
         #about {
             background-color: #f4f4f4;
             color: #333;
+            padding: 50px 0;
         }
-        #features {
-            background-color: #e9ecef;
-            color: #333;
+        #about h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #about p {
+            margin: 20px 0;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+        }
+        .team {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .team h3 {
+            margin-bottom: 10px;
+        }
+        .team ul {
+            list-style: none;
+            display: inline-flex;
+            gap: 15px;
+        }
+        .team ul li {
+            background-color: #333;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        .team ul li a {
+            color: white;
         }
 
         /* Footer */
@@ -105,7 +156,7 @@
     <!-- Header and Navigation -->
     <header>
         <div class="logo">
-            <h2>My Project</h2>
+            <h2>Academic DB App</h2>
         </div>
         <nav>
             <ul>
@@ -118,25 +169,61 @@
     <!-- Hero Section -->
     <div class="hero">
         <h1>Academic Database Management App</h1>
-	<p>A comprehensive solution for efficiently managing academic records and data.</p>
+        <p>A comprehensive solution for efficiently managing academic records and data.</p>
         <button onclick="window.location.href='https://your-deployed-app.com'">Go to App</button>
     </div>
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Key Features</h2>
+        <p>Explore the most important features that make this app stand out.</p>
+
+        <div class="feature-container">
+            <!-- Feature 1 -->
+            <div class="feature">
+                <img src="images/feature1.jpg" alt="Feature 1">
+                <h3>Efficient Data Management</h3>
+                <p>This feature helps you manage academic data efficiently with easy-to-use forms and tools.</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature">
+                <img src="images/feature2.jpg" alt="Feature 2">
+                <h3>Powerful Search and Filter</h3>
+                <p>Organize and retrieve student records in seconds with powerful search and filter capabilities.</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature">
+                <img src="images/feature3.jpg" alt="Feature 3">
+                <h3>Comprehensive Reporting</h3>
+                <p>Generate comprehensive reports and analytics to keep track of academic performance trends.</p>
+            </div>
+        </div>
+    </section>
 
     <!-- About Section -->
     <section id="about">
         <h2>About the Project</h2>
-        <p>This section provides details about the purpose and background of the project.</p>
-    </section>
+        <p>The inspiration for this project came from my time as a student where I noticed how difficult it was for institutions to efficiently manage student data. I wanted to create a solution that would simplify the process for academic staff while also providing valuable insights to educators and administrators. This project started as a personal challenge and eventually grew into something I could showcase as a Portfolio Project for <a href="https://www.holbertonschool.com">Holberton School</a>. The project was developed over a timeline of 4 months with continuous improvement based on feedback from users and mentors.</p>
 
-    <!-- Features Section -->
-    <section id="features">
-        <h2>Features</h2>
-        <p>This section highlights the key features and functionalities of the project.</p>
+        <p>The project is a collaboration of dedicated individuals who contributed their time and skills. You can learn more about the team below:</p>
+
+        <div class="team">
+            <h3>Meet the Team</h3>
+            <ul>
+                <li><a href="https://linkedin.com/in/team-member1" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/team-member1" target="_blank">GitHub</a></li>
+                <li><a href="https://twitter.com/team-member1" target="_blank">Twitter</a></li>
+            </ul>
+        </div>
+
+        <p>To view the source code for this project, visit the <a href="https://github.com/your-repository-link" target="_blank">GitHub repository</a>.</p>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 My Project. All rights reserved.</p>
+        <p>&copy; 2024 Academic DB App. All rights reserved.</p>
     </footer>
 
 </body>
